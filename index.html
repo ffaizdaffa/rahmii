@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Laporan Keuangan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Dashboard Laporan Keuangan</h1>
+      <p>Ringkasan pemasukan, pengeluaran, dan laba bersih.</p>
+    </header>
+
+    <section class="cards" aria-label="Ringkasan keuangan">
+      <article class="card income">
+        <h2>Total Pemasukan</h2>
+        <p id="totalIncome">Rp0</p>
+      </article>
+      <article class="card expense">
+        <h2>Total Pengeluaran</h2>
+        <p id="totalExpense">Rp0</p>
+      </article>
+      <article class="card profit">
+        <h2>Laba Bersih</h2>
+        <p id="netProfit">Rp0</p>
+      </article>
+    </section>
+
+    <section class="table-section" aria-label="Detail transaksi">
+      <h2>Detail Bulanan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Bulan</th>
+            <th>Pemasukan</th>
+            <th>Pengeluaran</th>
+            <th>Laba</th>
+          </tr>
+        </thead>
+        <tbody id="financialTableBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
